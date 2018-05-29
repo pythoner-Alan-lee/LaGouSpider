@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="crawler_data@192.168.1.250">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="crawler_data">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bbcwm"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="llsh"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <schema id="8" parent="1" name="python_learn"/>
+    <schema id="9" parent="1" name="spinach"/>
+    <schema id="10" parent="1" name="sp_demo"/>
+    <schema id="11" parent="1" name="sys"/>
+    <schema id="12" parent="1" name="yyyg"/>
+    <table id="13" parent="2" name="lagou_data"/>
+    <table id="14" parent="2" name="task"/>
+    <table id="15" parent="2" name="task_tmp"/>
+    <table id="16" parent="2" name="testtable"/>
+    <column id="17" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="13" name="title">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="19" parent="13" name="address">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="20" parent="13" name="money">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="21" parent="13" name="experience">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="22" parent="13" name="company">
+      <Position>6</Position>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="23" parent="13" name="fintance">
+      <Position>7</Position>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <key id="24" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="25" parent="14" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="14" name="dataSource">
+      <Position>2</Position>
+      <Comment>数据来源</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="27" parent="14" name="refNo">
+      <Position>3</Position>
+      <Comment>引用任务编号</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="28" parent="14" name="industry">
+      <Position>4</Position>
+      <Comment>任务大行业 Id</Comment>
+      <DataType>int(11) unsigned|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="29" parent="14" name="childIndustry">
+      <Position>5</Position>
+      <Comment>任务小行业 Id</Comment>
+      <DataType>int(11) unsigned|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="30" parent="14" name="title">
+      <Position>6</Position>
+      <DataType>varchar(80)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="31" parent="14" name="content">
+      <Position>7</Position>
+      <Comment>任务标题</Comment>
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="32" parent="14" name="price">
+      <Position>8</Position>
+      <Comment>完成任务价格</Comment>
+      <DataType>decimal(18,2)|0</DataType>
+      <DefaultExpression>&apos;0.00&apos;</DefaultExpression>
+    </column>
+    <column id="33" parent="14" name="tags">
+      <Position>9</Position>
+      <Comment>任务标签</Comment>
+      <DataType>varchar(120)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="34" parent="14" name="publishTime">
+      <Position>10</Position>
+      <Comment>任务发布时间</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="35" parent="14" name="endTime">
+      <Position>11</Position>
+      <Comment>任务截止时间</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="36" parent="14" name="contactName">
+      <Position>12</Position>
+      <Comment>联系人</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="37" parent="14" name="contactTel">
+      <Position>13</Position>
+      <Comment>联系电话</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="38" parent="14" name="province">
+      <Position>14</Position>
+      <Comment>省份</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="39" parent="14" name="city">
+      <Position>15</Position>
+      <Comment>城市</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="40" parent="14" name="images">
+      <Position>16</Position>
+      <Comment>任务图片集合，包括 taskId path seq 三个字段</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="41" parent="14" name="updateFlag">
+      <Position>17</Position>
+      <Comment>最后更新的Id</Comment>
+      <DataType>bigint(20)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="42" parent="14" name="taskUrl">
+      <Position>18</Position>
+      <Comment>来源地址</Comment>
+      <DataType>varchar(2048)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="43" parent="14" name="created">
+      <Position>19</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="44" parent="14" name="updated">
+      <Position>20</Position>
+      <Comment>更新时间</Comment>
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <index id="45" parent="14" name="idx_task_childIndustry">
+      <ColNames>childIndustry</ColNames>
+    </index>
+    <index id="46" parent="14" name="idx_task_dataSource">
+      <ColNames>dataSource</ColNames>
+    </index>
+    <index id="47" parent="14" name="idx_task_industry">
+      <ColNames>industry</ColNames>
+    </index>
+    <index id="48" parent="14" name="idx_task_refNo">
+      <ColNames>refNo</ColNames>
+    </index>
+    <key id="49" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="50" parent="15" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="51" parent="15" name="dataSource">
+      <Position>2</Position>
+      <Comment>数据来源</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="52" parent="15" name="refNo">
+      <Position>3</Position>
+      <Comment>引用任务编号</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="53" parent="15" name="industry">
+      <Position>4</Position>
+      <Comment>任务大行业 Id</Comment>
+      <DataType>int(11) unsigned|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="54" parent="15" name="childindustry">
+      <Position>5</Position>
+      <Comment>任务小行业 Id</Comment>
+      <DataType>int(11) unsigned|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="55" parent="15" name="title">
+      <Position>6</Position>
+      <DataType>varchar(80)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="56" parent="15" name="content">
+      <Position>7</Position>
+      <Comment>任务标题</Comment>
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="57" parent="15" name="price">
+      <Position>8</Position>
+      <Comment>完成任务价格</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="58" parent="15" name="tags">
+      <Position>9</Position>
+      <Comment>任务标签</Comment>
+      <DataType>varchar(120)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="59" parent="15" name="publishTime">
+      <Position>10</Position>
+      <Comment>任务发布时间</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="60" parent="15" name="endTime">
+      <Position>11</Position>
+      <Comment>任务截止时间</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="61" parent="15" name="contactName">
+      <Position>12</Position>
+      <Comment>联系人</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="62" parent="15" name="contactTel">
+      <Position>13</Position>
+      <Comment>联系电话</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="63" parent="15" name="province">
+      <Position>14</Position>
+      <Comment>省份</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="64" parent="15" name="city">
+      <Position>15</Position>
+      <Comment>城市</Comment>
+      <DataType>varchar(45)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="65" parent="15" name="images">
+      <Position>16</Position>
+      <Comment>任务图片集合，包括 taskId path seq 三个字段</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="66" parent="15" name="updateFlag">
+      <Position>17</Position>
+      <Comment>最后更新的Id</Comment>
+      <DataType>bigint(20)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="67" parent="15" name="taskUrl">
+      <Position>18</Position>
+      <Comment>来源地址</Comment>
+      <DataType>varchar(2048)|0</DataType>
+      <DefaultExpression>&apos;‘’&apos;</DefaultExpression>
+    </column>
+    <column id="68" parent="15" name="created">
+      <Position>19</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="69" parent="15" name="updated">
+      <Position>20</Position>
+      <Comment>更新时间</Comment>
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <index id="70" parent="15" name="idx_task_tmp_childIndustry">
+      <ColNames>childindustry</ColNames>
+    </index>
+    <index id="71" parent="15" name="idx_task_tmp_dataSource">
+      <ColNames>dataSource</ColNames>
+    </index>
+    <index id="72" parent="15" name="idx_task_tmp_industry">
+      <ColNames>industry</ColNames>
+    </index>
+    <index id="73" parent="15" name="idx_task_tmp_refNo">
+      <ColNames>refNo</ColNames>
+    </index>
+    <key id="74" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="75" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="76" parent="16" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="77" parent="16" name="url">
+      <Position>3</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <key id="78" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
